@@ -1,0 +1,52 @@
+========================================================================
+  PRIMETRADE.AI  |  MARKET SENTIMENT × TRADER PERFORMANCE
+  Analysis Summary
+========================================================================
+
+── DATASET OVERVIEW ────────────────────────────────────────────────
+  Total trade records : 211,224
+  Closed trades       : 104,402
+  Unique traders      : 32
+  Unique symbols      : 246
+  Date range          : May 2023 – May 2025
+  Total PnL generated : $10.25M
+
+── PNL BY SENTIMENT ────────────────────────────────────────────────
+  Sentiment           Avg PnL     Median   Win Rate     Trades    Total PnL
+  ----------------------------------------------------------------------
+  Extreme Fear     $   71.03  $   6.39     76.2%     10,406  $    0.74M
+  Fear             $  112.63  $   6.35     87.3%     29,808  $    3.36M
+  Neutral          $   71.20  $   4.58     82.4%     18,159  $    1.29M
+  Greed            $   85.40  $   4.93     76.9%     25,176  $    2.15M
+  Extreme Greed    $  130.21  $   8.53     89.2%     20,853  $    2.72M
+
+── DIRECTIONAL BIAS (LONG %) ───────────────────────────────────────
+  Extreme Fear      BUY%: 30.0%
+  Fear              BUY%: 31.0%
+  Neutral           BUY%: 32.3%
+  Greed             BUY%: 45.1%
+  Extreme Greed     BUY%: 31.2%
+
+── CONTRARIAN STRATEGY ALPHA ───────────────────────────────────────
+  Long during Fear/Extreme Fear   →  Avg PnL: $186.85  |  Win Rate: 82.3%
+  Short during Greed/Extr. Greed  →  Avg PnL: $144.13  |  Win Rate: 87.1%
+  All Other Trades (baseline)     →  Avg PnL: $61.48  |  Win Rate: 81.7%
+
+  Long-during-Fear vs Baseline : 3.0× better avg PnL
+  Short-during-Greed vs Baseline: 2.3× better avg PnL
+
+── STATISTICAL TESTS ───────────────────────────────────────────────
+  Extreme Greed vs Extreme Fear (t-test)
+    t = 3.862  |  p = 0.000113  ✓ Significant (p < 0.001)
+  Pearson r (FG score vs trade PnL)
+    r = 0.0092  |  p = 0.0028
+
+── KEY INSIGHTS ─────────────────────────────────────────────────────
+  1. Extreme Greed is the highest-alpha regime: $130.21 avg PnL, 89.2% win rate.
+  2. Contrarian longs during Fear yield 3.0× the baseline avg PnL.
+  3. Traders maintain a structural net-short bias (BUY% never exceeds 45%).
+  4. BUY trades peak in profitability during Fear ($209.65 avg).
+  5. SELL trades peak in profitability during Extreme Greed ($176.05 avg).
+  6. Neutral regime has the lowest median PnL — avoid overtrading here.
+
+========================================================================
